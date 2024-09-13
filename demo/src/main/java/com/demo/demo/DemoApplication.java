@@ -1,5 +1,7 @@
 package com.demo.demo;
 
+import org.apache.catalina.core.ApplicationContext;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		ApplicationContext context=(ApplicationContext) SpringApplication.run(DemoApplication.class, args);
+		
+		
 	}
 
 }
